@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{ 
+    --font-family: 'Montserrat', sans-serif; 
+    --white: #fafafa;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 100px;
+    background-color: darkblue;
+    padding:10px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar .logo img {
+    width: 100%;
+    max-width: 120px;
+    min-width: 60px;
+    max-height: 120px;
+}
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+
+.menu ul li{
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.menu ul li:hover{
+    border-bottom: 1px solid var(--white);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-family);
+    justify-content: center;
+    align-items: center;
+}
+/* ******************************************/ 
+
+.hero_section{
+    height: calc(100vh - 100px);
+    background-color: rgb(173, 173, 231);
+    background-image: url(https://www.nationalgeographic.com.es/medio/2020/04/15/monte-everest-8848-metros_5ff32b28_1262x831.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero_section::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: darkblue;
+    opacity: 0.20;
+    mix-blend-mode: ;
+}
+.hero_section * {
+    z-index: 1;
+    position: relative;
+}
+.hero_section-text h1{
+    font-family: var(--font-family);
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1;
+}
+.hero_section-text h1 span{
+    display: block;
+    font-weight: 600;
+}
+.hero_section-more {
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    display: flex;
+    font-weight: 400;
+}
+.hero_section-more p{
+    font-family: var(--font-family);
+}

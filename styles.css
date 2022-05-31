@@ -101,14 +101,41 @@
     font-weight: 600;
 }
 .hero_section-more {
+    font-family: var(--font-family);
+    text-transform: uppercase;
     bottom: 0;
+    font-weight: 600;
     position: absolute;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
     display: flex;
-    font-weight: 400;
 }
-.hero_section-more p{
+/* ******************************************/ 
+
+.about_section {
+    padding: 100px 100px;
+    background-color: #fafafa;
     font-family: var(--font-family);
+}
+.about_conteiner{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.section_title{
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.section_title span{
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+}
+.about_conteiner p{
+    text-align: center;
+    
 }
